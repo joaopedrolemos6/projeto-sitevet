@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    box-shadow: 0px 3px 5px #cacbcc;
+    background: #f4f4f5;
+    
+    
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 10px 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: black;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navList ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.navItem{
+    margin: 0 15px;
+}
+
+.navLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
+.navButton button{
+    border: none;
+    border-radius: 7.5px;
+    background: #34d399;
+    padding: 10px 15px;
+    
+
+}
+.navButton button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+.navButton button:hover{
+    background: #32ad80;
+    transition: 1s;
+
+}
+
+.mobileMenuIcon{
+    display: none;
+}
+
+.mobileMenu{
+    display: none;
+}
+
+
+main{
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+.bg-image{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../img/_e632de43-d4a3-410a-8c7e-894a900e3c73.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.logo-dog{
+    font-size: 6rem;
+}
+.ctd-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    & h1, a{
+        font-weight: 700;
+    }
+    & a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-left: 210px;
+        color: #fff;
+    }
+}
+
+
+.grid-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    & img{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Responsividade */
+@media screen and (max-width: 730px){
+    /* Header */
+    .navBar{
+        padding: 10px 20px;
+    }
+
+    .navItem{
+        display: none;
+
+    }
+    .navButton{
+        display: none;
+    }
+    .mobileMenuIcon{
+        display: block;
+    }
+    .mobileMenuIcon button{
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobileMenu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobileMenu .navItem{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobileMenu .navButton{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobileMenu .navButton button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    /* Main */
+   main{
+    padding: 10px;
+   }
+    .bg-image{
+        
+        flex-direction: column;
+    
+        height: 600px;
+    }
+
+    .logo-dog{
+        font-size: 5rem;
+    }
+    .ctd-text{
+        color: white;
+        margin-left: 70px;
+        gap: 20px;
+        & h1, a{
+            color: #fff;
+            font-weight: 700;
+        }
+        & a{
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-left: 210px;
+        }
+
+}
+}
