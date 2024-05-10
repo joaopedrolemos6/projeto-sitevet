@@ -102,10 +102,7 @@ header{
 }
 
 
-main{
-    border-radius: 15px;
-    padding: 10px 30px;
-}
+
 .bg-image{
     display: flex;
     justify-content: space-evenly;
