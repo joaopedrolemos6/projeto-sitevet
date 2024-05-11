@@ -3,9 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    
-
-    
+      
 }
 
 body{
@@ -16,6 +14,7 @@ body{
 }
 
 header{
+    
     box-shadow: 0px 3px 5px #cacbcc;
     background: #f4f4f5;
     
@@ -71,6 +70,86 @@ header{
     color: rgb(100, 95, 95);
     font-weight: 400;
     font-size: 12px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+}
+.container {
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.texto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 254, 254, 0.227); 
+    padding: 20px;
+    color: rgb(51, 49, 49);
+    height: 100%; 
+    width: 50%; 
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.texto p {
+    font-size: 35px;
+    margin-top: 130px;
+}
+
+.texto h1, .texto h2 {
+    font-size: 60px;
+   
+    margin-left: 50px;
+}
+
+.texto-content {
+    position: relative;
+    z-index: 1; 
+}
+
+.texto-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 0; 
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    overflow-x: hidden;
+    box-sizing: border-box; 
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease; 
+}
+
+footer a:hover {
+    color: #ffd700; 
 }
 
 /* .navButton button{

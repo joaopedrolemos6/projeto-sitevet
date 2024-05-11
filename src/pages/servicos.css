@@ -7,6 +7,12 @@
     
 }
 
+*{
+    margin: 0;
+    padding: 0;
+      
+}
+
 
 main{
     border: red 1px solid;
@@ -67,4 +73,29 @@ main{
         color: #000;
         font-size: 3rem;
     }
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 13px;
+    text-align: center;
+    position: relative;
+    bottom: -28px;
+    width: 100%;
+    left: 0;
+    overflow-x: hidden;
+    box-sizing: border-box; 
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease; 
+}
+
+footer a:hover {
+    color: #ffd700; 
 }

@@ -8,3 +8,9 @@ function menuShow(){
         document.querySelector('.icon').getElementsByClassName('mobileMenuIcon')
     }
 }
+
+
+
+
+
+
