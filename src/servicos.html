@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./contato.css">
     <script src="servico.js" defer></script>
     <script defer src="https://kit.fontawesome.com/0b6a9215c3.js" crossorigin="anonymous"></script>
+    
+    
     <title>Clinica Veterinária - Nossos Serviços</title>
 </head>
 <body>
@@ -73,33 +75,9 @@
                         </div>
                         <h1>CONSULTAS</h1>
                     </div>
-                
-                    <div class="ctnBtn">
-                        <button id="open-modal">
-                            Saber mais
-                        </button>
-
-                        <div id="fade" class="hide"></div>
-                        <div id="modal" class="hide">
-                          <div class="modal-header">
-                            <h2>CONSULTAS</h2>
-                            <button id="close-modal">
-                                <i class="fa-solid fa-x"></i>
-                            </button>
-                          </div>
-                          <div class="modal-body">
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, quam?
-                              Quas accusantium id cupiditate iste veritatis repudiandae odio dolore
-                              voluptas. Eum, deserunt quod. Sit similique laudantium assumenda
-                              repellat vel necessitatibus.
-                            </p>
-                            <div class="imgModal">
-                                <img src="./img/husky.jpeg" alt="">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+                    <button id="openModal1" class="styleBtnOpen">
+                        Saber mais
+                    </button>
                 </div>
                 <div class="ctnItem">
                     <div class="titleItem">
@@ -108,10 +86,10 @@
                         </div>
                         <h1>ULTRASSOM</h1>
                     </div>
-                
-                    <p>
-                        Inserir um pouco de texto
-                    </p>
+                    <button id="openModal2" class="styleBtnOpen">
+                        Saber mais
+                    </button>
+                    
                 </div>
                 <div class="ctnItem">
                     <div class="titleItem">
@@ -120,10 +98,9 @@
                         </div>
                         <h1>RAIO-X</h1>
                     </div>
-                
-                    <p>
-                        Inserir um pouco de texto
-                    </p>
+                    <button id="openModal3" class="styleBtnOpen">
+                        Saber mais
+                    </button>
                 </div>
                 <div class="ctnItem">
                     <div class="titleItem">
@@ -132,10 +109,9 @@
                         </div>
                         <h1>VACINAÇÃO</h1>
                     </div>
-                
-                    <p>
-                        Inserir um pouco de texto
-                    </p>
+                    <button id="openModal4" class="styleBtnOpen">
+                        Saber mais
+                    </button>
                 </div>
                 <div class="ctnItem">
                     <div class="titleItem">
@@ -144,10 +120,9 @@
                         </div>
                         <h1>CIRURGIAS</h1>
                     </div>
-                
-                    <p>
-                        Inserir um pouco de texto
-                    </p>
+                    <button id="openModal5"  class="styleBtnOpen">
+                        Saber mais
+                    </button>
                 </div>
                 <div class="ctnItem">
                     <div class="titleItem">
@@ -156,15 +131,109 @@
                         </div>
                         <h1>EXAMES HEMATOLÓGICOS</h1>
                     </div>
-                
-                    <p>
-                        Inserir um pouco de texto
-                    </p>
+                    <button id="openModal6"  class="styleBtnOpen">
+                        Saber mais
+                    </button>
                 </div>
 
                 
                 
 
+            </div>
+            <!-- Conteudos dos modais -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <div class="ctnClose">
+                        <span class="close" id="closeModal1">
+                            X
+                        </span>
+                    </div>
+                    <div class="textModalCtn">
+                        <h1>Consultas</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                        </p>
+                        <img src="img/husky.jpeg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal2">
+                        X
+                    </span>
+
+                    <h1>Consultas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                    </p>
+                    <img src="img/husky.jpeg" alt="">
+                </div>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal3">
+                        X
+                    </span>
+
+                    <h1>Consultas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                    </p>
+                    <img src="img/husky.jpeg" alt="">
+                </div>
+            </div>
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal4">
+                        X
+                    </span>
+
+                    <h1>Consultas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                    </p>
+                    <img src="img/husky.jpeg" alt="">
+                </div>
+            </div>
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal5">
+                        X
+                    </span>
+
+                    <h1>Consultas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                    </p>
+                    <img src="img/husky.jpeg" alt="">
+                </div>
+            </div>
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal6">
+                        X
+                    </span>
+
+                    <h1>Consultas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Magni omnis dolore debitis? Pariatur quas hic velit nemo 
+                        laboriosam odit minus molestias ex itaque fuga, quod id 
+                        veritatis illo recusandae nostrum?
+                    </p>
+                    <img src="img/husky.jpeg" alt="">
+                </div>
             </div>
         </div>
     </main>
